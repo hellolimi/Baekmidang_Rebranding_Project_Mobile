@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+@font-face {font-family: 'S-CoreDream-4Regular'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face {
+     font-family: 'S-CoreDream-6Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-5Medium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face {
+    font-family: 'Cafe24Danjunghae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Danjunghae.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{padding:0; margin:0; font-family: 'S-CoreDream-4Regular', '맑은 고딕', 'Malgun Gothic' ,sans-serif;}
+li{list-style:none;}
+a{text-decoration:none;}
+button{cursor:pointer;}
+img{display:block;}
+fieldset{border:none;}
+
+/* iphone6/7/8plus */
+@media screen and (max-width:414px){
+    *{font-size:18px;}
+}
+/* iphone6/7/8 */
+@media screen and (max-width:375px){
+    *{font-size:16px}
+}
+/* iphone5 */
+@media screen and (max-width:320px){
+    *{font-size:14px;}
+}
+
+html, body{width:100%; overflow-x:hidden;}
+html.active, body.active{overflow-y:hidden;}
+
+/* panel */
+.panel{position:fixed; z-index:10000; top:0; right:calc(-100% + 105px); width:calc(100% - 105px); height:100%; background-color:#fff; overflow-y:auto;}
+.panel .panel_top{width:100%; height:55px; background-color:#152148; padding: 0 15px; box-sizing:border-box;}
+.panel_top h2{float:left; line-height:55px; font-size:1.25rem; color:#fff;}
+.panel_top a{float:right; display:block; width:24px; margin-top:15.5px;}
+.panel_top a img{width:100%;}
+
+.panel .gnb > ul > li{ width:100%; border-bottom:1px solid #ccc;}
+.panel .main_nav{position:relative; display:block; width:100%; height:50px; line-height:48px; padding: 0 15px; box-sizing:border-box; font-size:1.25rem;  color:#152148; font-family: 'S-CoreDream-6Bold';}
+
+.panel .sub_nav{display:none;}
+.panel .sub_nav > li{width:100%; height:50px; border-bottom:1px solid #ccc;}
+.panel .sub_nav > li:last-child{border:none;}
+.panel .sub_nav > li a{ display:block; width:100%; height:50px; line-height:48px; padding: 0 15px; box-sizing:border-box; font-family: 'S-CoreDream-5Medium'; color:#152148;}
+
+.panel_bg{display:none; position:fixed; z-index:5500; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6);}
+
+.panel.active{right:0;}
+
+.panel .gnb > ul > li.active{border-bottom:2px solid #152148;}
+.panel .gnb > ul > li.active .main_nav{border-bottom:2px solid #152148;}
+.panel .gnb > ul > li.active .main_nav:after{position:absolute; top:0; bottom:0; right:15px; margin:auto 0; content:''; display:block; width:28px; height:4px; background-color:#152148; border-radius:2px; }
+
+/* search_box */
+.header_search{display:none; position:fixed; z-index: 4900; top:55px; left:0; width:100%; padding: 35px 15px 20px; box-sizing:border-box; border-bottom:1px solid #152148; background-color:#fdfdf6; overflow: hidden;}
+.header_search input[type=text]{float:left; width:78%; height:2.5rem; border:1px solid #152148; border-radius:5px; padding-left:15px; box-sizing:border-box;}
+.header_search input[type=text]::placeholder{color:#152148; position:relative; top:1px;}
+.header_search a{float:right; width:15%; height:2.5rem; border:none; border-radius:5px; background-color:#152148; background-image:url(../images/common/search_box_icon.png); background-repeat:no-repeat; background-size:24px; background-position: center;}
+.header_search a img{width:100%;}
+.search_bg{display:none; position:fixed; z-index:4800; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.6);}
+
+/* header */
+header{position:fixed; z-index:5000; top:0; left:0; width:100%; height:55px; padding:0 15px; background-color:#fdfdf6; border-bottom:2px solid #152148; box-sizing:border-box;}
+header h1{float:left; width:75px; height:70px; padding:3px 5.5px; box-sizing:border-box; border-radius: 0 0 5px 5px; background-color:#152148;}
+header h1 img{width:64px;}
+header a{position:relative; top:10px; float:right; display:block; width:32px; height:32px;}
+header a img{width:100%;}
+header .panel_icon{ margin-right:20px;}
+
+
+
+
+
+
+
+
+
+

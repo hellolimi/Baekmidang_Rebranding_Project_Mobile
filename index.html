@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="noindex,nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>백미당 - 백미당공방</title>
+        
+        <link rel="shortcut icon" href="images/common/favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/common/icon_ios.png">
+        <link rel="icon" sizes="192x192" href="images/common/icon__android.png">
+        
+        <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="pop_up">
+            <div class="p_wrap">
+                <div class="p_top">
+                    <img src="images/common/popup_bg.png" alt="팝업 배경 이미지">
+                    <div class="p_text01">
+                          <p>
+                               <span>본</span> 사이트는 상업적 목적이 아닌<br>
+                               개인 포트폴리오 용도로<br> 
+                               만들어 졌습니다.<br>
+                               홈페이지의 일부 내용과 이미지 등은<br>
+                               그 출처가 따로 있음을 밝힙니다.<br>
+                               본 사이트는 HTML5와 CSS3를<br> 
+                               기준으로 하여 크롬, 사파리, 오페라,<br> 
+                               파이어폭스, IE9이상의 브라우저에<br>
+                               맞춘 홈페이지입니다. 
+                          </p>
+                          <a class="go_pc" href="http://ltbllim.dothome.co.kr/?move_pc_screen=1">PC버전 바로가기</a>
+                    </div>
+                </div>
+                <div class="p_bottom">
+                    <form action="#">
+                        <fieldset>
+                            <legend>오늘하루 보지 않기 박스</legend>
+                            <input type="checkbox" id="chck_box">
+                            <label for="chck_box">오늘 하루 보이지 않기</label>
+                            <a href="#">닫기 X</a>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel_top">
+                <h2>MENU</h2>
+                <a href="#close" title="panel 닫기">
+                    <img src="images/common/panel_close_btn.png" alt="닫기 버튼 이미지">
+                </a>
+            </div>
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="#main" class="main_nav">백미당</a>
+                        <ul class="sub_nav">
+                            <li><a href="#main">백미당 소개</a></li>
+                            <li><a href="#main">CI/BI</a></li>
+                            <li><a href="#main">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#main" class="main_nav">백미당공방</a>
+                        <ul class="sub_nav">
+                            <li><a href="#main">백미당 공방</a></li>
+                            <li><a href="#main">밀크 앤 컬처</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#main" class="main_nav">메뉴</a>
+                        <ul class="sub_nav">
+                            <li><a href="#main">아이스크림</a></li>
+                            <li><a href="#main">백미당 커피</a></li>
+                            <li><a href="#main">토핑 디저트</a></li>
+                            <li><a href="#main">베이커리</a></li>
+                            <li><a href="#main">소프트 쉐이크</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#main" class="main_nav">커뮤니티</a>
+                        <ul class="sub_nav">
+                            <li><a href="#main">공지사항</a></li>
+                            <li><a href="#main">이벤트</a></li>
+                            <li><a href="#main">새 소식</a></li>
+                            <li><a href="#main">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#main" class="main_nav">매장안내</a>
+                        <ul class="sub_nav">
+                            <li><a href="#main">서울</a></li>
+                            <li><a href="#main">경기 · 인천</a></li>
+                            <li><a href="#main">영남 · 강원</a></li>
+                            <li><a href="#main">충청 · 호남</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#main" class="main_nav">창업문의</a>
+                        <ul class="sub_nav">
+                            <li><a href="#main">창업 절차</a></li>
+                            <li><a href="#main">창업 비용</a></li>
+                            <li><a href="#main">창업 문의</a></li>
+                            <li><a href="#main">창업 FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="panel_bg"></div>
+        <div class="body_wrap">
+            <header>
+                <h1>
+                    <img src="images/common/header_logo.png" alt="백미당 로고">
+                </h1>
+                <a href="#search_open" class="search_icon" title="검색창 열기">
+                    <img src="images/common/header_search_icon.png" alt="검색 아이콘">
+                </a>
+                <a href="#panel_open" class="panel_icon" title="패널 아이콘 열기">
+                    <img src="images/common/header_panel_icon.png" alt="패널 아이콘">
+                </a>
+            </header>
+            <div class="header_search">
+                <input type="text" placeholder="검색어를 입력하세요.">
+                <a href="#search" title="검색 버튼">
+                </a>
+            </div>
+            <div class="search_bg"></div>
+            <main>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/main/main_bg_01.png" alt="메인 이미지1">
+                            <div class="text_box01">
+                                <h2>백미당 머그 구매시<br>10000POINT 적립</h2>
+                                <a href="#" title="이벤트 더 알아보기">
+                                    <img src="images/main/main_icon_01.png" alt="더 보기 아이콘">
+                                </a>
+                                <p>지금 바로 구매하세요!</p>
+                                <p class="date">
+                                    이벤트 기간<br>
+                                    2020년 11월 28일<span> ~ 2021년 01월 04일</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main/main_bg_02.png" alt="메인 이미지2">
+                            <div class="text_box02">
+                                <h2>지금은 백미당 O'CLOCK</h2>
+                                <p>매일 월요일 아침 백미당에서는 커피가 10% 할인!</p>
+                                <a href="#" title="더 보기">
+                                    <span class="line01"></span>
+                                    <span class="text">view more</span>
+                                    <span class="line02"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/main/main_bg_03.png" alt="메인 이미지3">
+                            <div class="text_box03">
+                                <h2>
+                                    Time for Strawberry<br>
+                                    In Baekmidang
+                                </h2>
+                                <a href="#" title="이벤트 보러 가기">할인 메뉴 지금 보기 →</a>
+                                <p>
+                                    <span class="letter_top">시즌 한정<br></span>
+                                    <span class="letter_bottom">딸기가 포함된 전 메뉴 10% 할인</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>      
+            </main>
+            <div class="introduction">
+                <h2>백미당 공방<br>이야기</h2>
+                <p>SINCE 1964</p>
+                <a href="#" title="백미당 공방이야기">
+                    <img src="images/main/introduction_more_btn.png" alt="더보기 아이콘">
+                </a>
+            </div>
+            <div class="icecream_slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                          <img src="images/main/icecream_slider_bn01.png" alt="아이스크림 사진01">
+                          <div class="text_box">
+                              <h4>CLASSIC MILK ICECREAM</h4>
+                              <h3>우유 소프트 아이스크림</h3>
+                              <p>Made of Organic Milk</p>
+                              <a href="#" title="더 보기" class="view_more_btn">
+                                  <img src="images/main/icecream_slider_icon.png" alt="더 보기 아이콘">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="images/main/icecream_slider_bn02.png" alt="아이스크림 사진02">
+                          <div class="text_box">
+                              <h4>JEJU GREETEA &amp; CHOCOLOATE</h4>
+                              <h3>말차 초코 아이스크림</h3>
+                              <p>Made of Organic Milk</p>
+                              <a href="#" title="더 보기" class="view_more_btn">
+                                  <img src="images/main/icecream_slider_icon.png" alt="더 보기 아이콘">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="images/main/icecream_slider_bn03.png" alt="아이스크림 사진03">
+                          <div class="text_box">
+                              <h4>FRESH APPLE MANGO</h4>
+                              <h3>애플 망고 빙수</h3>
+                              <p>Made of Organic Milk</p>
+                              <a href="#" title="더 보기" class="view_more_btn">
+                                  <img src="images/main/icecream_slider_icon.png" alt="더 보기 아이콘">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="images/main/icecream_slider_bn04.png" alt="아이스크림 사진04">
+                          <div class="text_box">
+                              <h4>KAKAO &amp; STRAWBERRY</h4>
+                              <h3>삼청 초코 딸기</h3>
+                              <p>Made of Organic Milk</p>
+                              <a href="#" title="더 보기" class="view_more_btn">
+                                  <img src="images/main/icecream_slider_icon.png" alt="더 보기 아이콘">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="images/main/icecream_slider_bn05.png" alt="아이스크림 사진05">
+                          <div class="text_box">
+                             <h4>NATURAL SOYBEAN MILK</h4>
+                              <h3>직접 짠 두유 아이스크림</h3>
+                              <p>Made of Organic Milk</p>
+                              <a href="#" title="더 보기" class="view_more_btn">
+                                  <img src="images/main/icecream_slider_icon.png" alt="더 보기 아이콘">
+                              </a>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coffee">
+               <div class="content">
+                    <h3>1964 BLEND</h3>
+                    <h2>
+                        백미당 커피는<br>
+                        유기농 원두만을<br>
+                        사용합니다.
+                    </h2>
+                    <a href="#menu">MENU</a>
+               </div>
+            </div>
+            <div class="bakery">
+                <h3>BAKERY</h3>
+                <div class="bakery_sllider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <img src="images/main/bakery_bn01.png" alt="베이커리 사진01">
+                              <div class="text_box">
+                                  <h4>네모난<br>우유 식빵</h4>
+                                  <a href="#" title="더 보기" class="view_more_btn">
+                                  <img src="images/main/icecream_slider_icon.png" alt="더 보기 아이콘">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/main/bakery_bn02.png" alt="베이커리 사진02">
+                              <div class="text_box">
+                                  <h4>우유 생크림<br>케이크</h4>
+                                  <a href="#" title="더 보기" class="view_more_btn">
+                                  <img src="images/main/icecream_slider_icon.png" alt="더 보기 아이콘">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/main/bakery_bn03.png" alt="베이커리 사진03">
+                              <div class="text_box">
+                                  <h4>초코 생크림<br>케이크</h4>
+                                  <a href="#" title="더 보기" class="view_more_btn">
+                                  <img src="images/main/icecream_slider_icon.png" alt="더 보기 아이콘">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/main/bakery_bn04.png" alt="베이커리 사진04">
+                              <div class="text_box">
+                                  <h4>아몬드<br>머랭 쿠키</h4>
+                                  <a href="#" title="더 보기" class="view_more_btn">
+                                  <img src="images/main/icecream_slider_icon.png" alt="더 보기 아이콘">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="images/main/bakery_bn05.png" alt="베이커리 사진05">
+                              <div class="text_box">
+                                  <h4>백미당<br>그래놀라</h4>
+                                  <a href="#" title="더 보기" class="view_more_btn">
+                                  <img src="images/main/icecream_slider_icon.png" alt="더 보기 아이콘">
+                                  </a>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shake_bn">
+                <div class="text_top">
+                    <h2>BAEKMIDANG ORIGINAL<br>SHAKE</h2>
+                    <span></span>
+                </div>
+                <div class="text_bottom">
+                    <h2>VIEW MENU</h2>
+                    <span></span>
+                </div>
+            </div>
+            <div class="video">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><video id="bmd_v01" src="videos/videoplayer_video01.mp4" ></video></div>
+                        <div class="swiper-slide"><video id="bmd_v02" src="videos/videoplayer_video02.mp4" ></video></div> 
+                        <div class="swiper-slide"><video id="bmd_v03" src="videos/videoplayer_video03.mp4" ></video></div>
+                        <div class="swiper-slide"><video id="bmd_v04" src="videos/videoplayer_video04.mp4" ></video></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <button class="play_btn"></button>
+                <button class="pause_btn"></button>
+            </div>
+            <div class="search_store">
+                <form action="#">
+                    <fieldset name="스토어 검색">
+                        <legend>우리동네 백미당 찾기</legend>
+                        <div class="search_box">
+                            <input type="text" placeholder="지역이나 매장명을 입력하세요.">
+                            <button type="submit"></button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="franchise">
+                <h2>JOIN OUR FAMILY</h2>
+                <div class="icons">
+                    <div class="process">
+                    <img src="images/main/franchise_icon01.png" alt="창업절차">
+                    <p>창업절차</p>
+                    </div>
+                    <div class="expense">
+                        <img src="images/main/franchise_icon02.png" alt="창업비용">
+                        <p>창업비용</p>
+                    </div>
+                    <div class="inquiry">
+                        <img src="images/main/franchise_icon03.png" alt="창업문의">
+                        <p>창업문의</p>
+                    </div>
+                    <div class="faq">
+                        <img src="images/main/franchise_icon04.png" alt="FAQ">
+                        <p>FAQ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="board">
+                <div class="board_wrap">
+                    <div class="notice">
+                       <h3>NOTICE</h3>
+                       <div class="swiper-container">
+                           <div class="swiper-wrapper">
+                               <div class="swiper-slide">
+                                   <a href="#">2020 소비자가 뽑은 올해 최고의 브랜드</a>
+                                   <span class="date">2020. 12. 04</span>
+                               </div>
+                               <div class="swiper-slide">
+                                   <a href="#">백미당 여의도 SK증권 빌딩지점 증축 안내</a>
+                                   <span class="date">2020. 11. 31</span>
+                               </div>
+                               <div class="swiper-slide">
+                                   <a href="#">크리스마스 선물 세트 예약 판매 안내</a>
+                                   <span class="date">2020. 11. 07</span>
+                               </div>
+                               <div class="swiper-slide">
+                                   <a href="#">백미당 현대시티아울렛 동대문지점 개업</a>
+                                   <span class="date">2020. 10. 24</span>
+                               </div>
+                               <div class="swiper-slide">
+                                   <a href="#">개인정보처리방침 변경 안내</a>
+                                   <span class="date">2020. 09. 16</span>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="event">
+                        <h3>EVENT</h3>
+                        <div class="swiper-container">
+                           <div class="swiper-wrapper">
+                               <div class="swiper-slide">
+                                   <a href="#">고객 감사 연말 포인트 적립 이벤트 진행</a>
+                                    <span class="date">2020. 12. 11</span>
+                               </div>
+                               <div class="swiper-slide">
+                                   <a href="#">백미당’o clock 모닝 할인 이벤트!</a>
+                                   <span class="date">2020. 11. 21</span>
+                               </div>
+                               <div class="swiper-slide">
+                                   <a href="#">고객 추첨 경품 이벤트 당첨시 다양한 경품 증정</a>
+                                   <span class="date">2020. 10. 09</span>
+                               </div>
+                               <div class="swiper-slide">
+                                   <a href="#">백미당 텀블러 구매 후기 이벤트 진행</a>
+                                   <span class="date">2020. 09. 14</span>
+                               </div>
+                               <div class="swiper-slide">
+                                   <a href="#">백미당 멤버쉽 VIP 고객 혜택 안내</a>
+                                   <span class="date">2020. 08. 15</span>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <ul class="f_nav">
+                    <li><a href="#" title="로그인">로그인</a></li>
+                    <li><a href="#" title="고객센터">고객센터</a></li>
+                    <li><a href="http://ltbllim.dothome.co.kr/?move_pc_screen=1" title="PC버전">PC버전</a></li>
+                </ul>
+                <address>주소 : 서울시 강남구 도산대로 000, 0000빌딩</address>
+                <p>COPYRIGHT&copy; 2019 Baekmidang All Rights Reserved</p>
+                <ul class="sns">
+                    <li>
+                        <a href="#">
+                            <img src="images/main/footer_sns_icon01.png" alt="페이스북 아이콘">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/main/footer_sns_icon02.png" alt="트위터 아이콘">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/main/footer_sns_icon03.png" alt="인스타그램 아이콘">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/main/footer_sns_icon04.png" alt="유투브 아이콘">
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
