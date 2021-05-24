@@ -108,13 +108,6 @@ $(document).ready(function(){
 
 });
 
-/* main */
-$(document).ready(function(){
-    
-    
-
-});
-
 /* header_search */
 $(document).ready(function(){
     $('.search_icon').click(function(e){
