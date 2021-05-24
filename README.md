@@ -3,8 +3,6 @@
 *sample view*
 
 <img src="baekmidang_m.gif" height="400" alt="sample preview" />
-<br />
-<br />
 
 ## Link
 
